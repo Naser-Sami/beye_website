@@ -41,26 +41,27 @@ class HomeViewHeader extends StatelessWidget {
                 SizedBox(width: AppSize.ws56),
               ],
             const Spacer(),
-            SizedBox(
-              width: r.width(AppSize.ws300),
-              child: Row(
-                children: [
-                  if (p.headerData.length > 2)
-                    for (int i = p.headerData.length - 2;
-                        i < p.headerData.length;
-                        i++) ...[
-                      _textButton(
-                        context,
-                        data: p.headerData[i].title,
-                        isSelected: p.headerData[i].isSelected,
-                        onPressed: p.headerData[i].onPressed,
-                      ),
-                      if (i != p.headerData.length - 1)
-                        SizedBox(width: AppSize.ws56),
-                    ],
-                ],
+            if (MediaQuery.of(context).size.width >= 1200)
+              SizedBox(
+                width: r.width(AppSize.ws300),
+                child: Row(
+                  children: [
+                    if (p.headerData.length > 2)
+                      for (int i = p.headerData.length - 2;
+                          i < p.headerData.length;
+                          i++) ...[
+                        _textButton(
+                          context,
+                          data: p.headerData[i].title,
+                          isSelected: p.headerData[i].isSelected,
+                          onPressed: p.headerData[i].onPressed,
+                        ),
+                        if (i != p.headerData.length - 1)
+                          SizedBox(width: AppSize.ws56),
+                      ],
+                  ],
+                ),
               ),
-            ),
           ],
         ),
       );

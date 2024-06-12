@@ -15,10 +15,30 @@ class HomeViewOurProducts extends StatelessWidget {
     final t = Provider.of<ThemeManager>(context);
 
     List<Map<String, String>> data = [
-      {'icon': 'analysis', 'title': '', 'description': ''},
-      {'icon': 'data_model', 'title': '', 'description': ''},
-      {'icon': 'etl', 'title': '', 'description': ''},
-      {'icon': 'kpi_library', 'title': '', 'description': ''},
+      {
+        'icon': 'analysis',
+        'title': 'Banking Analytics',
+        'description':
+            'Elevate your operations with our Banking Analytics solution. Real-time insights, predictive analytics, and customizable dashboards for informed decision-making and growth.'
+      },
+      {
+        'icon': 'data_model',
+        'title': 'Banking Data Model',
+        'description':
+            'Build a robust foundation with our adaptable Banking Data Model. Accommodate diverse data sources, ensuring comprehensive and efficient processing.'
+      },
+      {
+        'icon': 'etl',
+        'title': 'ETL Application',
+        'description':
+            'Streamline data processing with our powerful ETL Application. Optimize information flow, ensuring quality, security, and swift processing.'
+      },
+      {
+        'icon': 'kpi_library',
+        'title': 'KPI Library',
+        'description':
+            'Access a rich repository of Banking KPIs. Facilitate performance evaluation, strategic planning, and efficient decision-making.'
+      },
     ];
 
     return Consumer<HomeManager>(
@@ -138,7 +158,42 @@ class HomeViewOurProducts extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              SvgIconWidget(name: data[i]['icon'] ?? "")
+                              Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: r.padding(10),
+                                  ),
+                                  child: SvgIconWidget(
+                                      name: data[i]['icon'] ?? "")),
+                              SizedBox(
+                                height: r.padding(8),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: r.padding(40),
+                                ),
+                                child: TextComponent(
+                                  data[i]['title'] ?? "",
+                                  style: TextStyle(
+                                    fontSize: r.fontSize(FontSize.s24),
+                                    color: t.white,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: r.padding(8),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: r.padding(40),
+                                ),
+                                child: TextComponent(
+                                  data[i]['description'] ?? "",
+                                  style: TextStyle(
+                                    fontSize: r.fontSize(FontSize.s16),
+                                    color: t.white,
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                         ),

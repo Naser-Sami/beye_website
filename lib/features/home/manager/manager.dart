@@ -22,7 +22,7 @@ class HomeManager extends ChangeNotifier {
   void scrollToSection(BuildContext context) {
     Scrollable.ensureVisible(
       context,
-      duration: const Duration(milliseconds: Constants.animationDelay600),
+      duration: const Duration(milliseconds: Constants.animationDelay2000),
     );
   }
 
@@ -30,6 +30,13 @@ class HomeManager extends ChangeNotifier {
 
   void onHover(bool v) {
     isHover = v;
+    notifyListeners();
+  }
+
+  bool isContacUsHoverd = false;
+
+  void onContactUsHover(bool v) {
+    isContacUsHoverd = v;
     notifyListeners();
   }
 
@@ -48,6 +55,29 @@ class HomeManager extends ChangeNotifier {
     isLogoHover[index] = v;
     notifyListeners();
   }
+
+  ColorFilter greyStyle = const ColorFilter.matrix(<double>[
+    0.2126,
+    0.7152,
+    0.0722,
+    0,
+    0,
+    0.2126,
+    0.7152,
+    0.0722,
+    0,
+    0,
+    0.2126,
+    0.7152,
+    0.0722,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+  ]);
 
   List<HeaderData> headerData = [];
 
@@ -101,7 +131,9 @@ class HomeManager extends ChangeNotifier {
       HeaderData(
         title: 'Contact Us',
         isSelected: false,
-        onPressed: () {},
+        onPressed: () {
+          scrollToSection(navigatorKeys[7].currentContext!);
+        },
       ),
     ];
   }

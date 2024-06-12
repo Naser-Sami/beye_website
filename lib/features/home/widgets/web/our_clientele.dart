@@ -16,22 +16,21 @@ class HomeViewOurClientele extends StatelessWidget {
 
     List<String> ourClientele = [
       'central_bank_of_jordan',
-      'cairo_amman_of_jordan',
+      'cairo_amman_bank',
       'bank_of_jordan',
       'rak_bank',
       'safa_bank',
       'gib_bank',
-      'bank_al_bilad',
-      'saudi_investments_bank'
+      'bank_albilad',
+      'saudi_investment_bank'
     ];
 
     return Consumer<HomeManager>(builder: (context, p, _) {
       return Container(
-        height: r.height(AppSize.hs670),
+        height: r.height(830),
         width: mq(context).width,
         padding: EdgeInsets.symmetric(
-          horizontal: r.padding(AppPadding.p140),
-        ),
+            horizontal: r.padding(260), vertical: r.padding(120)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -72,10 +71,19 @@ class HomeViewOurClientele extends StatelessWidget {
                             child: SizedBox(
                               width: r.width(AppSize.ws180),
                               child: Center(
-                                child: SvgIconWidget(
-                                  name: ourClientele[i],
-                                  height: r.padding(AppSize.hs118),
-                                  color: p.isLogoHover[i] ? null : t.textGrey(),
+                                child: ColorFiltered(
+                                  colorFilter: p.isLogoHover[i]
+                                      ? const ColorFilter.mode(
+                                          Colors.transparent,
+                                          BlendMode.multiply,
+                                        )
+                                      : p.greyStyle,
+                                  child: PngImageWidget(
+                                    name: ourClientele[i],
+                                    height: r.padding(AppSize.hs118),
+                                    color:
+                                        p.isLogoHover[i] ? null : t.textGrey(),
+                                  ),
                                 ),
                               ),
                             ),
@@ -116,10 +124,17 @@ class HomeViewOurClientele extends StatelessWidget {
                             child: SizedBox(
                               width: r.width(AppSize.ws180),
                               child: Center(
-                                child: SvgIconWidget(
-                                  name: ourClientele[i],
-                                  height: r.padding(AppSize.hs118),
-                                  color: p.isLogoHover[i] ? null : t.textGrey(),
+                                child: ColorFiltered(
+                                  colorFilter: p.isLogoHover[i]
+                                      ? const ColorFilter.mode(
+                                          Colors.transparent,
+                                          BlendMode.multiply,
+                                        )
+                                      : p.greyStyle,
+                                  child: PngImageWidget(
+                                    name: ourClientele[i],
+                                    height: r.padding(AppSize.hs118),
+                                  ),
                                 ),
                               ),
                             ),

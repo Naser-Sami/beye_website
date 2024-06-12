@@ -19,6 +19,7 @@ class Constants {
   static const int animationDelay800 = 800; // milliseconds
   static const int animationDelay1000 = 1000; // milliseconds
   static const int animationDelay1500 = 1500; // milliseconds
+  static const int animationDelay2000 = 2000; // milliseconds
 
   // ******************
   // *** Path ***

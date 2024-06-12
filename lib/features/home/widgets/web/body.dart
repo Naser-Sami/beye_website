@@ -43,6 +43,10 @@ class WebHomeViewBody extends StatelessWidget {
               const HomeViewOurClientele(),
               const HomeViewOurProducts(),
               const OurSolutions(),
+              const TheDashboards(),
+              const WhyBeye(),
+              const HaveUniqeNeeds(),
+              const Footer(),
             ],
           ),
         );

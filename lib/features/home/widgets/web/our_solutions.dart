@@ -23,21 +23,18 @@ class OurSolutions extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: r.padding(140),
       ),
-      color: Colors.green.shade50,
       child: Stack(
         alignment: Alignment.center,
         children: [
-          //mockup_6
           SizedBox(
             width: mq(context).width,
             height: r.padding(600),
             child: Stack(
               alignment: Alignment.centerLeft,
               children: [
-                Container(
+                SizedBox(
                   width: mq(context).width,
                   height: mq(context).height,
-                  color: Colors.red.shade100,
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
@@ -60,7 +57,7 @@ class OurSolutions extends StatelessWidget {
                       circleWithText(
                         context,
                         top: r.padding(250),
-                        right: r.padding(90),
+                        right: r.padding(85),
                         title: "Risk Mitigation",
                         description:
                             "Analytics plays a crucial role in risk management. Our clients have seen a 30% reduction in non-performing loans thanks to our predictive risk models, resulting in stronger fi",
@@ -68,7 +65,7 @@ class OurSolutions extends StatelessWidget {
                       ),
                       circleWithText(
                         context,
-                        bottom: r.padding(0),
+                        bottom: r.padding(10),
                         right: r.padding(170),
                         crossAxisAlignment: CrossAxisAlignment.center,
                         title: "Customer Satisfaction",
@@ -81,6 +78,50 @@ class OurSolutions extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              TextComponent(
+                'Our',
+                style: TextStyle(
+                  fontSize: r.fontSize(FontSize.s130),
+                  color: t.primary(),
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    height: r.padding(154),
+                    child: const PngImageWidget(
+                      fit: BoxFit.fill,
+                      name: 'mockup_6',
+                    ),
+                  ),
+                  TextComponent(
+                    'Solutions',
+                    style: TextStyle(
+                      fontSize: r.fontSize(FontSize.s130),
+                      color: t.primary(),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              SizedBox(
+                width: r.padding(775),
+                child: TextComponent(
+                  "At BEYE Group, we understand the transformative potential of analytics in the banking industry. Our solutions have consistently delivered tangible benefits to financial institutions, enabling them to thrive in today's competitive landscape. Here are some real statistics that highlight the impact of analytics on our clients' success:",
+                  style: TextStyle(
+                    fontSize: r.fontSize(FontSize.s24),
+                    color: t.textGrey(),
+                    fontWeight: FontWeight.normal,
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -111,9 +152,30 @@ class OurSolutions extends StatelessWidget {
           Container(
             width: r.padding(100),
             height: r.padding(100),
+            padding: EdgeInsets.all(r.padding(15)),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: color,
+            ),
+            child: Container(
+              width: r.padding(80),
+              height: r.padding(80),
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(
+                  colors: [
+                    Color(0xFFDFDFDF),
+                    Color(0xFFE1E1E1),
+                    Color(0xFFF2F2F2),
+                    Color(0xFFFBFBFB),
+                    Color(0xFFFFFFFF),
+                  ],
+                ),
+              ),
+              child: SvgIconWidget(
+                name: 'location',
+                color: color,
+              ),
             ),
           ),
           SizedBox(

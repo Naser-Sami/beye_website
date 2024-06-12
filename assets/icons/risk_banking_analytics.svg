@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="635" height="172" viewBox="0 0 635 172">
+  <defs>
+    <filter id="Rectangle_62509" x="61" y="55" width="513" height="117" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_62509-2" x="27" y="27" width="581" height="130" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_62509-3" x="0" y="0" width="635" height="140" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_235177" data-name="Group 235177" transform="translate(-147.333 -8230.396)">
+    <g id="Group_235178" data-name="Group 235178" transform="translate(223.77 8295.352)">
+      <g id="Group_39532" data-name="Group 39532" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -76.44, -64.96)" filter="url(#Rectangle_62509)">
+          <g id="Rectangle_62509-4" data-name="Rectangle 62509" transform="translate(76 65)" fill="#fff" stroke="#efefef" stroke-width="1">
+            <rect width="483" height="87" rx="16" stroke="none"/>
+            <rect x="0.5" y="0.5" width="482" height="86" rx="15.5" fill="none"/>
+          </g>
+        </g>
+        <line id="Line_2287" data-name="Line 2287" y1="23.404" transform="translate(241.135 48.692)" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+        <g id="Group_39522" data-name="Group 39522" transform="translate(24.869 18.451)">
+          <text id="_VE_Growth" data-name="+VE Growth" transform="translate(64.694 44.594)" fill="#525252" font-size="13" font-family="Oxygen"><tspan x="0" y="0">+VE Growth</tspan></text>
+          <text id="_1_288_889.3k" data-name="1,288,889.3k" transform="translate(64.694 19.594)" fill="#525252" font-size="16" font-family="Oxygen-Bold, Oxygen" font-weight="700"><tspan x="0" y="0">1,288,889.3k</tspan></text>
+          <g id="Group_39521" data-name="Group 39521" transform="translate(0 0)">
+            <circle id="Ellipse_2157" data-name="Ellipse 2157" cx="26.5" cy="26.5" r="26.5" transform="translate(-0.306 -0.406)" fill="#f2f2f2"/>
+            <g id="Group_39509" data-name="Group 39509" transform="translate(16.043 16.045)">
+              <rect id="Rectangle_19121" data-name="Rectangle 19121" width="21" height="21" transform="translate(-0.349 -0.451)" fill="none" opacity="0"/>
+              <g id="Group_39534" data-name="Group 39534" transform="translate(0.057 6.226)" style="mix-blend-mode: normal;isolation: isolate">
+                <path id="Path_95138" data-name="Path 95138" d="M222.519,327.763h2.505v-2.348h1.3v2.348h2.493v1.175h-2.505V331.3h-1.3v-2.361h-2.493Z" transform="translate(-222.519 -323.113)" fill="#457b9d"/>
+                <path id="Path_95139" data-name="Path 95139" d="M232.327,331.683l-3.244-8.548h1.755l2.288,6.429,2.179-6.429h1.707l-3.123,8.548Z" transform="translate(-222.457 -323.135)" fill="#457b9d"/>
+                <path id="Path_95140" data-name="Path 95140" d="M243,324.431h-3.656v2.119h3.523v1.284h-3.523v2.554l3.971.048-.074,1.247h-5.665v-8.548h5.569Z" transform="translate(-222.377 -323.135)" fill="#457b9d"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_39523" data-name="Group 39523" transform="translate(266.333 18.451)">
+          <text id="_-VE_Growth" data-name="-VE Growth" transform="translate(66.23 45.594)" fill="#525252" font-size="14" font-family="Oxygen"><tspan x="0" y="0">-VE Growth</tspan></text>
+          <text id="_-51_323.4_K" data-name="-51,323.4 K" transform="translate(66.23 19.594)" fill="#525252" font-size="16" font-family="Oxygen-Bold, Oxygen" font-weight="700"><tspan x="0" y="0">-51,323.4 K</tspan></text>
+          <g id="Group_39520" data-name="Group 39520" transform="translate(0 0)">
+            <circle id="Ellipse_2158" data-name="Ellipse 2158" cx="26.5" cy="26.5" r="26.5" transform="translate(0.23 -0.406)" fill="#f2f2f2"/>
+            <g id="Group_39510" data-name="Group 39510" transform="translate(16.045 16.045)">
+              <rect id="Rectangle_19121-2" data-name="Rectangle 19121" width="21" height="21" transform="translate(0.185 -0.451)" fill="none" opacity="0"/>
+              <g id="Group_39535" data-name="Group 39535" transform="translate(0.022 5.518)" style="mix-blend-mode: normal;isolation: isolate">
+                <path id="Path_95141" data-name="Path 95141" d="M222.531,329.275v-1.342h3.853v1.342Z" transform="translate(-222.531 -322.286)" fill="#457b9d"/>
+                <path id="Path_95142" data-name="Path 95142" d="M229.926,333.1l-3.783-9.966h2.047l2.668,7.5,2.541-7.5h1.99l-3.643,9.966Z" transform="translate(-221.892 -323.135)" fill="#457b9d"/>
+                <path id="Path_95143" data-name="Path 95143" d="M240.962,324.646H236.7v2.47h4.107v1.5H236.7v2.978l4.63.056-.086,1.453h-6.6v-9.966h6.493Z" transform="translate(-220.389 -323.135)" fill="#457b9d"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_235179" data-name="Group 235179" transform="translate(189.275 8267.275)">
+      <g id="Group_39532-2" data-name="Group 39532" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -41.94, -36.88)" filter="url(#Rectangle_62509-2)">
+          <g id="Rectangle_62509-5" data-name="Rectangle 62509" transform="translate(42 37)" fill="#fff" stroke="#efefef" stroke-width="1">
+            <rect width="551" height="100" rx="16" stroke="none"/>
+            <rect x="0.5" y="0.5" width="550" height="99" rx="15.5" fill="none"/>
+          </g>
+        </g>
+        <line id="Line_2287-2" data-name="Line 2287" y1="26.789" transform="translate(275.64 55.828)" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+        <g id="Group_39522-2" data-name="Group 39522" transform="translate(28.078 21.66)">
+          <text id="_VE_Growth-2" data-name="+VE Growth" transform="translate(74.98 52.461)" fill="#525252" font-size="16" font-family="Oxygen"><tspan x="0" y="0">+VE Growth</tspan></text>
+          <text id="_1_288_889.3k-2" data-name="1,288,889.3k" transform="translate(74.98 23.461)" fill="#525252" font-size="19" font-family="Oxygen-Bold, Oxygen" font-weight="700"><tspan x="0" y="0">1,288,889.3k</tspan></text>
+          <g id="Group_39521-2" data-name="Group 39521" transform="translate(0 0)">
+            <ellipse id="Ellipse_2157-2" data-name="Ellipse 2157" cx="30.5" cy="30" rx="30.5" ry="30" transform="translate(-0.02 0.461)" fill="#f2f2f2"/>
+            <g id="Group_39509-2" data-name="Group 39509" transform="translate(18.45 17.648)">
+              <rect id="Rectangle_19121-3" data-name="Rectangle 19121" width="25" height="24" transform="translate(-0.47 -0.187)" fill="none" opacity="0"/>
+              <g id="Group_39534-2" data-name="Group 39534" transform="translate(0 7.397)" style="mix-blend-mode: normal;isolation: isolate">
+                <path id="Path_95138-2" data-name="Path 95138" d="M222.519,328.1h2.868v-2.687h1.484V328.1h2.854v1.345h-2.868v2.7h-1.484v-2.7h-2.854Z" transform="translate(-222.519 -322.781)" fill="#457b9d"/>
+                <path id="Path_95139-2" data-name="Path 95139" d="M232.8,332.919l-3.713-9.784h2.009l2.619,7.359,2.495-7.359h1.954l-3.575,9.784Z" transform="translate(-221.499 -323.135)" fill="#457b9d"/>
+                <path id="Path_95140-2" data-name="Path 95140" d="M243.787,324.618H239.6v2.425h4.032v1.47H239.6v2.923l4.545.055-.084,1.427h-6.484v-9.784h6.374Z" transform="translate(-220.179 -323.135)" fill="#457b9d"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_39523-2" data-name="Group 39523" transform="translate(304.037 21.66)">
+          <text id="_-VE_Growth-2" data-name="-VE Growth" transform="translate(75.021 52.461)" fill="#525252" font-size="16" font-family="Oxygen"><tspan x="0" y="0">-VE Growth</tspan></text>
+          <text id="_-51_323.4_K-2" data-name="-51,323.4 K" transform="translate(75.021 23.461)" fill="#525252" font-size="19" font-family="Oxygen-Bold, Oxygen" font-weight="700"><tspan x="0" y="0">-51,323.4 K</tspan></text>
+          <g id="Group_39520-2" data-name="Group 39520" transform="translate(0 0)">
+            <ellipse id="Ellipse_2158-2" data-name="Ellipse 2158" cx="30.5" cy="30" rx="30.5" ry="30" transform="translate(0.021 0.461)" fill="#f2f2f2"/>
+            <g id="Group_39510-2" data-name="Group 39510" transform="translate(18.451 17.648)">
+              <rect id="Rectangle_19121-4" data-name="Rectangle 19121" width="24" height="24" transform="translate(-0.43 -0.187)" fill="none" opacity="0"/>
+              <g id="Group_39535-2" data-name="Group 39535" transform="translate(0.384 6.586)" style="mix-blend-mode: normal;isolation: isolate">
+                <path id="Path_95141-2" data-name="Path 95141" d="M222.531,329.469v-1.536h4.41v1.536Z" transform="translate(-222.531 -321.47)" fill="#457b9d"/>
+                <path id="Path_95142-2" data-name="Path 95142" d="M230.473,334.542l-4.33-11.407h2.343l3.054,8.58,2.908-8.58h2.278l-4.169,11.407Z" transform="translate(-221.277 -323.135)" fill="#457b9d"/>
+                <path id="Path_95143-2" data-name="Path 95143" d="M241.877,324.865H237v2.828h4.7v1.714H237v3.408l5.3.065-.1,1.664h-7.56V323.135h7.432Z" transform="translate(-218.328 -323.135)" fill="#457b9d"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_235180" data-name="Group 235180" transform="translate(162 8240)">
+      <g id="Group_39532-3" data-name="Group 39532" transform="translate(0 0)">
+        <g transform="matrix(1, 0, 0, 1, -14.67, -9.6)" filter="url(#Rectangle_62509-3)">
+          <g id="Rectangle_62509-6" data-name="Rectangle 62509" transform="translate(15 10)" fill="#fff" stroke="#efefef" stroke-width="1">
+            <rect width="605" height="110" rx="16" stroke="none"/>
+            <rect x="0.5" y="0.5" width="604" height="109" rx="15.5" fill="none"/>
+          </g>
+        </g>
+        <line id="Line_2287-3" data-name="Line 2287" y1="29.44" transform="translate(302.923 61.204)" fill="none" stroke="#e0e0e0" stroke-width="1"/>
+        <g id="Group_39522-3" data-name="Group 39522" transform="translate(31.286 23.264)">
+          <text id="_VE_Growth-3" data-name="+VE Growth" transform="translate(82.047 59.133)" fill="#525252" font-size="18" font-family="Oxygen"><tspan x="0" y="0">+VE Growth</tspan></text>
+          <text id="_1_288_889.3k-3" data-name="1,288,889.3k" transform="translate(82.047 27.133)" fill="#525252" font-size="22" font-family="Oxygen-Bold, Oxygen" font-weight="700"><tspan x="0" y="0">1,288,889.3k</tspan></text>
+          <g id="Group_39521-3" data-name="Group 39521" transform="translate(0 0)">
+            <ellipse id="Ellipse_2157-3" data-name="Ellipse 2157" cx="33.5" cy="33" rx="33.5" ry="33" transform="translate(0.047 0.133)" fill="#f2f2f2"/>
+            <g id="Group_39509-3" data-name="Group 39509" transform="translate(19.847 20.055)">
+              <rect id="Rectangle_19121-5" data-name="Rectangle 19121" width="26" height="26" transform="translate(0.2 0.078)" fill="none" opacity="0"/>
+              <g id="Group_39534-3" data-name="Group 39534" transform="translate(0 7.86)" style="mix-blend-mode: normal;isolation: isolate">
+                <path id="Path_95138-3" data-name="Path 95138" d="M222.519,328.368h3.152v-2.953h1.63v2.953h3.136v1.478h-3.152v2.97h-1.63v-2.97h-3.136Z" transform="translate(-222.519 -322.52)" fill="#457b9d"/>
+                <path id="Path_95139-3" data-name="Path 95139" d="M233.164,333.887l-4.081-10.752h2.208l2.879,8.087,2.741-8.087h2.147l-3.929,10.752Z" transform="translate(-220.748 -323.135)" fill="#457b9d"/>
+                <path id="Path_95140-3" data-name="Path 95140" d="M244.4,324.765h-4.6v2.665h4.431v1.615H239.8v3.213l5,.061-.093,1.568h-7.126V323.135h7.005Z" transform="translate(-218.456 -323.135)" fill="#457b9d"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_39523-3" data-name="Group 39523" transform="translate(334.52 23.264)">
+          <text id="_-VE_Growth-3" data-name="-VE Growth" transform="translate(82.813 59.133)" fill="#525252" font-size="18" font-family="Oxygen"><tspan x="0" y="0">-VE Growth</tspan></text>
+          <text id="_-51_323.4_K-3" data-name="-51,323.4 K" transform="translate(82.813 27.133)" fill="#525252" font-size="22" font-family="Oxygen-Bold, Oxygen" font-weight="700"><tspan x="0" y="0">-51,323.4 K</tspan></text>
+          <g id="Group_39520-3" data-name="Group 39520" transform="translate(0 0)">
+            <ellipse id="Ellipse_2158-3" data-name="Ellipse 2158" cx="33.5" cy="33" rx="33.5" ry="33" transform="translate(-0.187 0.133)" fill="#f2f2f2"/>
+            <g id="Group_39510-3" data-name="Group 39510" transform="translate(20.055 20.055)">
+              <rect id="Rectangle_19121-6" data-name="Rectangle 19121" width="27" height="26" transform="translate(-0.242 0.078)" fill="none" opacity="0"/>
+              <g id="Group_39535-3" data-name="Group 39535" transform="translate(0.255 6.969)" style="mix-blend-mode: normal;isolation: isolate">
+                <path id="Path_95141-3" data-name="Path 95141" d="M222.531,329.621v-1.688h4.847v1.688Z" transform="translate(-222.531 -320.83)" fill="#457b9d"/>
+                <path id="Path_95142-3" data-name="Path 95142" d="M230.9,335.671l-4.758-12.536h2.574l3.356,9.429,3.2-9.429h2.5l-4.582,12.536Z" transform="translate(-220.796 -323.135)" fill="#457b9d"/>
+                <path id="Path_95143-3" data-name="Path 95143" d="M242.593,325.036h-5.362v3.107H242.4v1.883h-5.167v3.746l5.824.071-.108,1.828h-8.308V323.135h8.168Z" transform="translate(-216.714 -323.135)" fill="#457b9d"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
