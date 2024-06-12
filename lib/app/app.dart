@@ -5,7 +5,6 @@ import 'dart:async';
 // Packages
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 // import 'package:flutter_localizations/flutter_localizations.dart';
@@ -26,7 +25,7 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 
   static void setLocale(BuildContext context, Locale newLocale) async {
-    _MyAppState state = context.findAncestorStateOfType<_MyAppState>()!;
+    // _MyAppState state = context.findAncestorStateOfType<_MyAppState>()!;
   }
 }
 
