@@ -160,6 +160,7 @@ class OurSolutions extends StatelessWidget {
             child: Container(
               width: r.padding(80),
               height: r.padding(80),
+              padding: EdgeInsets.all(r.padding(10)),
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: LinearGradient(

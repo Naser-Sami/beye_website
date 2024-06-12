@@ -2,6 +2,7 @@
 
 // Packages
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 // Files
 import '/config/config.dart';
@@ -39,10 +40,21 @@ class _WebOrDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      key: Key(_WEB_KEY),
-      body: WebHomeViewBody(),
-    );
+    return Consumer<HomeManager>(builder: (context, p, _) {
+      return Scaffold(
+        key: const Key(_WEB_KEY),
+        floatingActionButton: Visibility(
+          visible: p.show,
+          child: FloatingActionButton(
+            child: const Icon(Icons.arrow_upward),
+            onPressed: () {
+              p.scrollToTop();
+            },
+          ),
+        ),
+        body: const WebHomeViewBody(),
+      );
+    });
   }
 }
 

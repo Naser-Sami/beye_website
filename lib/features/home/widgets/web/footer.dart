@@ -1,7 +1,5 @@
 // Packages
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
 
 // Files
@@ -46,25 +44,25 @@ class Footer extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: r.padding(24),
-                              child: SvgIconWidget(
+                              child: const SvgIconWidget(
                                 name: 'facebook',
                               ),
                             ),
                             SizedBox(
                               width: r.padding(24),
-                              child: SvgIconWidget(
+                              child: const SvgIconWidget(
                                 name: 'x',
                               ),
                             ),
                             SizedBox(
                               width: r.padding(24),
-                              child: SvgIconWidget(
+                              child: const SvgIconWidget(
                                 name: 'snapchat',
                               ),
                             ),
                             SizedBox(
                               width: r.padding(24),
-                              child: SvgIconWidget(
+                              child: const SvgIconWidget(
                                 name: 'instagram',
                               ),
                             ),
@@ -98,8 +96,10 @@ class Footer extends StatelessWidget {
                       ),
                       SizedBox(height: r.padding(32)),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SvgIconWidget(name: 'location2', color: t.white),
+                          SizedBox(width: r.padding(16)),
                           SizedBox(
                             width: r.padding(280),
                             child: TextComponent(
@@ -114,8 +114,10 @@ class Footer extends StatelessWidget {
                       ),
                       SizedBox(height: r.padding(24)),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SvgIconWidget(name: 'at_mail', color: t.white),
+                          SizedBox(width: r.padding(16)),
                           TextComponent(
                             "info@beyegroup.com",
                             style: TextStyle(
@@ -127,8 +129,10 @@ class Footer extends StatelessWidget {
                       ),
                       SizedBox(height: r.padding(24)),
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           SvgIconWidget(name: 'phone', color: t.white),
+                          SizedBox(width: r.padding(16)),
                           TextComponent(
                             "00962 6 5337669",
                             style: TextStyle(
@@ -142,14 +146,14 @@ class Footer extends StatelessWidget {
                     ],
                   ),
                 ),
-                Expanded(
+                const Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [],
                   ),
                 ),
-                Expanded(
+                const Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -165,7 +169,7 @@ class Footer extends StatelessWidget {
             height: 1,
             color: t.white,
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
         ],

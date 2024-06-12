@@ -7,14 +7,14 @@ import '/core/core.dart';
 
 class SvgIconWidget extends StatelessWidget {
   const SvgIconWidget({
-    Key? key,
+    super.key,
     required this.name,
     this.width,
     this.height,
     this.color,
     this.fit = BoxFit.contain,
     this.onPressed,
-  }) : super(key: key);
+  });
 
   final String name;
   final double? width;
@@ -24,19 +24,13 @@ class SvgIconWidget extends StatelessWidget {
   final void Function()? onPressed;
   @override
   Widget build(BuildContext context) {
-    return MaterialButton(
-      height: 0,
-      onPressed: onPressed,
-      hoverColor: Colors.transparent,
-      splashColor: Colors.transparent,
-      child: SvgPicture.asset(
-        Func.getIconSVG(name),
-        width: width,
-        height: height,
-        colorFilter:
-            color == null ? null : ColorFilter.mode(color!, BlendMode.srcIn),
-        fit: fit,
-      ),
+    return SvgPicture.asset(
+      Func.getIconSVG(name),
+      width: width,
+      height: height,
+      colorFilter:
+          color == null ? null : ColorFilter.mode(color!, BlendMode.srcIn),
+      fit: fit,
     );
   }
 }

@@ -1,6 +1,7 @@
 // Packages
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 // Files
 import '/core/utils/constants/const.dart';
@@ -26,6 +27,46 @@ class HomeManager extends ChangeNotifier {
     );
   }
 
+  bool show = false;
+
+  void showFloatActionButton() {
+    show = true;
+    notifyListeners();
+  }
+
+  void hideFloatActionButton() {
+    show = false;
+    notifyListeners();
+  }
+
+  void handleScroll() async {
+    scrollController.addListener(
+      () {
+        if (scrollController.position.userScrollDirection ==
+            ScrollDirection.reverse) {
+          showFloatActionButton();
+        }
+        if (scrollController.position.userScrollDirection ==
+            ScrollDirection.forward) {
+          hideFloatActionButton();
+        }
+      },
+    );
+  }
+
+  void scrollToTop() {
+    if (scrollController.hasClients) {
+      final position = scrollController.position.minScrollExtent;
+      scrollController.animateTo(
+        position,
+        duration: const Duration(seconds: 1),
+        curve: Curves.easeOut,
+      );
+    }
+
+    hideFloatActionButton();
+  }
+
   bool isHover = false;
 
   void onHover(bool v) {
@@ -33,10 +74,10 @@ class HomeManager extends ChangeNotifier {
     notifyListeners();
   }
 
-  bool isContacUsHoverd = false;
+  bool isContactUsHover = false;
 
   void onContactUsHover(bool v) {
-    isContacUsHoverd = v;
+    isContactUsHover = v;
     notifyListeners();
   }
 

@@ -6,8 +6,26 @@ import 'package:provider/provider.dart';
 import '/config/config.dart';
 import '/core/core.dart';
 
-class WebHomeViewBody extends StatelessWidget {
+class WebHomeViewBody extends StatefulWidget {
   const WebHomeViewBody({super.key});
+
+  @override
+  State<WebHomeViewBody> createState() => _WebHomeViewBodyState();
+}
+
+class _WebHomeViewBodyState extends State<WebHomeViewBody> {
+  @override
+  void initState() {
+    super.initState();
+
+    sl<HomeManager>().handleScroll();
+  }
+
+  @override
+  void dispose() {
+    sl<HomeManager>().scrollController.removeListener(() {});
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +63,7 @@ class WebHomeViewBody extends StatelessWidget {
               const OurSolutions(),
               const TheDashboards(),
               const WhyBeye(),
-              const HaveUniqeNeeds(),
+              const HaveUniqueNeeds(),
               const Footer(),
             ],
           ),
