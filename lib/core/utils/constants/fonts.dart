@@ -37,8 +37,10 @@ class FontSize {
   static double s28 = 28.0.sp;
   static double s30 = 30.0.sp;
   static double s32 = 32.0.sp;
+  static double s80 = 80.0.sp;
   static double s98 = 98.0.sp;
   static double s100 = 100.0.sp;
+  static double s130 = 130.0.sp;
 
   // displays
 

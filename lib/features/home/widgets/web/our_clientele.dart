@@ -1,6 +1,5 @@
 // Packages
 import 'package:flutter/material.dart';
-import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
 // Files
@@ -14,6 +13,17 @@ class HomeViewOurClientele extends StatelessWidget {
   Widget build(BuildContext context) {
     final r = Provider.of<ResponsiveManager>(context);
     final t = Provider.of<ThemeManager>(context);
+
+    List<String> ourClientele = [
+      'central_bank_of_jordan',
+      'cairo_amman_of_jordan',
+      'bank_of_jordan',
+      'rak_bank',
+      'safa_bank',
+      'gib_bank',
+      'bank_al_bilad',
+      'saudi_investments_bank'
+    ];
 
     return Consumer<HomeManager>(builder: (context, p, _) {
       return Container(
@@ -50,14 +60,23 @@ class HomeViewOurClientele extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        for (int i = 0; i < 4; i++) ...[
-                          SizedBox(
-                            width: r.width(AppSize.ws180),
-                            child: Center(
-                              child: PngImageWidget(
-                                name: 'central_bank_of_jordan',
-                                height: r.padding(AppSize.hs118),
-                                width: r.width(AppSize.ws180),
+                        for (int i = 0; i < ourClientele.length - 4; i++) ...[
+                          MouseRegion(
+                            onEnter: (event) {
+                              p.onLogoHover(true, i);
+                            },
+                            onExit: (event) {
+                              p.onLogoHover(false, i);
+                            },
+                            onHover: (event) {},
+                            child: SizedBox(
+                              width: r.width(AppSize.ws180),
+                              child: Center(
+                                child: SvgIconWidget(
+                                  name: ourClientele[i],
+                                  height: r.padding(AppSize.hs118),
+                                  color: p.isLogoHover[i] ? null : t.textGrey(),
+                                ),
                               ),
                             ),
                           ),
@@ -85,27 +104,27 @@ class HomeViewOurClientele extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        for (int i = 0; i < 4; i++) ...[
+                        for (int i = 4; i < ourClientele.length; i++) ...[
                           MouseRegion(
                             onEnter: (event) {
-                              p.onLogoHover(true);
+                              p.onLogoHover(true, i);
                             },
                             onExit: (event) {
-                              p.onLogoHover(false);
+                              p.onLogoHover(false, i);
                             },
                             onHover: (event) {},
                             child: SizedBox(
                               width: r.width(AppSize.ws180),
                               child: Center(
                                 child: SvgIconWidget(
-                                  name: 'rak_bank',
+                                  name: ourClientele[i],
                                   height: r.padding(AppSize.hs118),
-                                  color: p.isLogoHover ? null : t.textGrey(),
+                                  color: p.isLogoHover[i] ? null : t.textGrey(),
                                 ),
                               ),
                             ),
                           ),
-                          if (i != 3)
+                          if (i != ourClientele.length - 1)
                             Container(
                               height: r.height(AppSize.hs200),
                               color: t.borderColor(),

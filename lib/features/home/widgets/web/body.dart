@@ -41,6 +41,8 @@ class WebHomeViewBody extends StatelessWidget {
               const HomeViewAboutUs(),
               const HomeViewAchievements(),
               const HomeViewOurClientele(),
+              const HomeViewOurProducts(),
+              const OurSolutions(),
             ],
           ),
         );

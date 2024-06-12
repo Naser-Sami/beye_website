@@ -41,9 +41,7 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
               width: r.width(AppSize.ws230),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(r.padding(AppRadius.r16)),
-                border: Border.all(
-                  color: Colors.white,
-                ),
+                border: Border.all(color: t.secondary(), width: 0.50),
               ),
             ),
             AnimatedOpacity(

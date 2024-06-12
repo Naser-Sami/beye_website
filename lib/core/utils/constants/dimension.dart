@@ -152,6 +152,7 @@ class AppSize {
   static double hs195 = 195.0.h;
   static double hs200 = 200.0.h;
   static double hs224 = 224.0.h;
+  static double hs230 = 230.0.h;
   static double hs240 = 240.0.h;
   static double hs245 = 245.0.h;
   static double hs250 = 250.0.h;

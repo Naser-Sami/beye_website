@@ -170,8 +170,8 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                           ButtonWithHoverEffectComponent(
                             onEnter: (event) => p.onHover(true),
                             onExit: (event) => p.onHover(false),
-                            isHover: p.isHover, //sd
-                            text: 'Click Me!', //s
+                            isHover: p.isHover,
+                            text: 'How it works',
                           ),
                         ],
                       ),

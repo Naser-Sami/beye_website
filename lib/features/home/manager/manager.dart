@@ -33,10 +33,19 @@ class HomeManager extends ChangeNotifier {
     notifyListeners();
   }
 
-  bool isLogoHover = false;
+  List<bool> isLogoHover = [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ];
 
-  void onLogoHover(bool v) {
-    isLogoHover = v;
+  void onLogoHover(bool v, int index) {
+    isLogoHover[index] = v;
     notifyListeners();
   }
 
