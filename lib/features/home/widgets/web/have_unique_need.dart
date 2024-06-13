@@ -76,6 +76,10 @@ class HaveUniqueNeeds extends StatelessWidget {
                   text: 'Contact Us Now',
                   onEnter: (event) => p.onContactUsHover(true),
                   onExit: (event) => p.onContactUsHover(false),
+                  trailing: SvgIconWidget(
+                    name: 'arrow',
+                    width: r.padding(24),
+                  ),
                 ),
               ],
             ),

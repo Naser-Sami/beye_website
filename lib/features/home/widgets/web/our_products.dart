@@ -213,6 +213,10 @@ class HomeViewOurProducts extends StatelessWidget {
                         onExit: (event) => p.onHover(false),
                         isHover: p.isHover,
                         text: 'See All Products ',
+                        trailing: SvgIconWidget(
+                          name: 'arrow',
+                          width: r.padding(24),
+                        ),
                       ),
                     ],
                   ),

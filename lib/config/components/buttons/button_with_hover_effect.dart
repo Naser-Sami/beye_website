@@ -13,6 +13,9 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
   final void Function(PointerHoverEvent)? onHover;
   final bool isHover;
   final String text;
+  final Widget? leading;
+  final Widget? trailing;
+  final double? width;
 
   const ButtonWithHoverEffectComponent(
       {super.key,
@@ -20,7 +23,10 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
       this.onExit,
       this.onHover,
       required this.isHover,
-      required this.text});
+      required this.text,
+      this.leading,
+      this.trailing,
+      this.width});
 
   @override
   Widget build(BuildContext context) {
@@ -33,12 +39,12 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
       cursor: SystemMouseCursors.click,
       child: SizedBox(
         height: r.padding(AppSize.hs64),
-        width: r.width(AppSize.ws230),
+        width: width ?? r.width(AppSize.ws250),
         child: Stack(
           children: [
             Container(
               height: r.padding(AppSize.hs64),
-              width: r.width(AppSize.ws230),
+              width: width ?? r.width(AppSize.ws250),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(r.padding(AppRadius.r16)),
                 border: Border.all(color: t.secondary(), width: 0.50),
@@ -49,7 +55,7 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
               duration:
                   const Duration(milliseconds: Constants.animationDelay400),
               child: AnimatedContainer(
-                width: isHover ? r.width(AppSize.ws230) : 0,
+                width: isHover ? width ?? r.width(AppSize.ws250) : 0,
                 height: r.padding(AppSize.hs64),
                 duration:
                     const Duration(milliseconds: Constants.animationDelay400),
@@ -63,11 +69,10 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(
-                    Icons.arrow_right,
-                    size: r.padding(AppSize.ws30),
-                    color: t.white,
-                  ),
+                  if (leading != null) ...[
+                    leading!,
+                    SizedBox(width: r.padding(16)),
+                  ],
                   Text(
                     text,
                     style: TextStyle(
@@ -75,6 +80,10 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
                       fontSize: r.fontSize(FontSize.s20),
                     ),
                   ),
+                  if (trailing != null) ...[
+                    SizedBox(width: r.padding(16)),
+                    trailing!,
+                  ],
                 ],
               ),
             ),

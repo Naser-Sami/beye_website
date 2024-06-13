@@ -172,6 +172,11 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                             onExit: (event) => p.onHover(false),
                             isHover: p.isHover,
                             text: 'How it works',
+                            leading: Icon(
+                              Icons.play_arrow,
+                              color: t.white,
+                              size: r.padding(28),
+                            ),
                           ),
                         ],
                       ),
