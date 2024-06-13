@@ -28,7 +28,7 @@ class HomeViewAboutUs extends StatelessWidget {
               Expanded(
                 flex: 40,
                 child: Center(
-                  child: TextComponent(
+                  child: SelectableTextComponent(
                     'About Us',
                     textAlign: TextAlign.start,
                     style: TextStyle(
@@ -46,7 +46,7 @@ class HomeViewAboutUs extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    SelectableTextComponent(
                       'Beye is a pioneering fintech company specialized in providing Intelligent business Analytics solutions for the banking sector',
                       textAlign: TextAlign.start,
                       style: TextStyle(
@@ -68,7 +68,7 @@ class HomeViewAboutUs extends StatelessWidget {
                       color: t.fall(),
                       isWithBorder: false,
                       child: Center(
-                        child: Text(
+                        child: TextComponent(
                           'Learn More',
                           style: TextStyle(
                               color: t.white,

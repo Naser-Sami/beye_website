@@ -46,7 +46,7 @@ class HomeViewAchievements extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextComponent(
+                    SelectableTextComponent(
                       i == data.length - 1
                           ? "+${data[i]['value']}"
                           : data[i]['value'].toString(),
@@ -56,7 +56,7 @@ class HomeViewAchievements extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    TextComponent(
+                    SelectableTextComponent(
                       data[i]['title'].toString(),
                       style: TextStyle(
                         fontSize: r.fontSize(24),

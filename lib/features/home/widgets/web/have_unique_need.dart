@@ -47,7 +47,7 @@ class HaveUniqueNeeds extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      TextComponent(
+                      SelectableTextComponent(
                         'Have Unique Needs?',
                         style: TextStyle(
                           color: t.white,
@@ -56,7 +56,7 @@ class HaveUniqueNeeds extends StatelessWidget {
                           fontFamily: Constants.primaryFont,
                         ),
                       ),
-                      TextComponent(
+                      SelectableTextComponent(
                         "Contact our experts to discuss custom solutions tailored to your banking analytics requirements. Let's create success together",
                         style: TextStyle(
                           color: t.white,

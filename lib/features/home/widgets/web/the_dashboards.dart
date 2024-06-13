@@ -24,14 +24,14 @@ class TheDashboards extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              TextComponent(
+              SelectableTextComponent(
                 'The',
                 style: TextStyle(
                   fontSize: r.fontSize(FontSize.s40),
                   color: t.text(),
                 ),
               ),
-              TextComponent(
+              SelectableTextComponent(
                 'Dashboards',
                 style: TextStyle(
                   fontSize: r.fontSize(FontSize.s80),
@@ -63,7 +63,7 @@ class TheDashboards extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          TextComponent(
+                          SelectableTextComponent(
                             'Finance Banking Analytics',
                             style: TextStyle(
                               fontSize: r.fontSize(FontSize.s32),
@@ -74,7 +74,7 @@ class TheDashboards extends StatelessWidget {
                           SizedBox(
                             height: r.padding(16),
                           ),
-                          TextComponent(
+                          SelectableTextComponent(
                             'Leverage eal-time monitoring, graphical insights, and simplified financial data for percise strategy execution.',
                             style: TextStyle(
                               fontSize: r.fontSize(FontSize.s16),
@@ -84,7 +84,7 @@ class TheDashboards extends StatelessWidget {
                           SizedBox(
                             height: r.padding(8),
                           ),
-                          TextComponent(
+                          SelectableTextComponent(
                             'Maintain optimal balance betwen Assets and Liabilities, enhancing shareholder value. Take immediate corrective actions seamlessly with our management functions.',
                             style: TextStyle(
                               fontSize: r.fontSize(FontSize.s16),
@@ -129,7 +129,7 @@ class TheDashboards extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                TextComponent(
+                                SelectableTextComponent(
                                   'Finance Empower',
                                   style: TextStyle(
                                     fontSize: r.fontSize(FontSize.s32),
@@ -140,7 +140,7 @@ class TheDashboards extends StatelessWidget {
                                 SizedBox(
                                   height: r.padding(16),
                                 ),
-                                TextComponent(
+                                SelectableTextComponent(
                                   'Empower CFOs beyond reporting. Drive startegy with real-time insights. Optimize balance, enhance shareholder value, and act swiftly with seamless management functions.',
                                   style: TextStyle(
                                     fontSize: r.fontSize(FontSize.s16),
@@ -186,16 +186,17 @@ class TheDashboards extends StatelessWidget {
                             child: Stack(
                               alignment: Alignment.center,
                               children: [
-                                Padding(
+                                Container(
                                   padding: EdgeInsets.symmetric(
                                     horizontal: r.padding(40),
                                   ),
+                                  width: mq(context).width,
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
-                                      TextComponent(
+                                      SelectableTextComponent(
                                         'Retail Banking Analytics',
                                         style: TextStyle(
                                           fontSize: r.fontSize(FontSize.s32),
@@ -206,61 +207,33 @@ class TheDashboards extends StatelessWidget {
                                       SizedBox(
                                         height: r.padding(16),
                                       ),
-                                      TextComponent(
-                                        'Unlock retail success with our toolkit:\n',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
+                                      _textWidget(r,
+                                          'Unlock retail success with our toolkit:'),
+                                      _textWidget(
+                                        r,
+                                        ' • Customer Analytics: Gain a competitive edge understanding customer profiles.',
                                       ),
-                                      TextComponent(
-                                        'Customer Analytics: Gain a competitive edge understanding customer profiles.',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
+                                      _textWidget(r,
+                                          ' • Leading Management: Analyze portfolios, sales, and bookings.'),
+                                      _textWidget(
+                                        r,
+                                        ' • Liability Optimization: Boost revenues with deposit pricing.',
                                       ),
-                                      TextComponent(
-                                        'Leading Management: Analyze portfolios, sales, and bookings.',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
+                                      _textWidget(
+                                        r,
+                                        ' • Card Analytics: Real-time monitoring for strategic planning.',
                                       ),
-                                      TextComponent(
-                                        'Liability Optimization: Boost revenues with deposit pricing.',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
+                                      _textWidget(
+                                        r,
+                                        ' • Transactions Analisis: Enhance customer experience and analyze transactions.',
                                       ),
-                                      TextComponent(
-                                        'Card Analytics: Real-time monitoring for strategic planning.',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
+                                      _textWidget(
+                                        r,
+                                        ' • Branch 360: Overview and comparison tool for branch networks.',
                                       ),
-                                      TextComponent(
-                                        'Transactions Analisis: Enhance customer experience and analyze transactions.',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
-                                      ),
-                                      TextComponent(
-                                        'Branch 360: Overview and comparison tool for branch networks.',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
-                                      ),
-                                      TextComponent(
-                                        'ATMs & E-Channels: Mine valuable data for strategic insights.',
-                                        style: TextStyle(
-                                          fontSize: r.fontSize(FontSize.s16),
-                                          color: Colors.black,
-                                        ),
+                                      _textWidget(
+                                        r,
+                                        ' • ATMs & E-Channels: Mine valuable data for strategic insights.',
                                       ),
                                     ],
                                   ),
@@ -305,7 +278,7 @@ class TheDashboards extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      TextComponent(
+                      SelectableTextComponent(
                         'Risk Banking Analytics',
                         style: TextStyle(
                           fontSize: r.fontSize(FontSize.s32),
@@ -316,7 +289,7 @@ class TheDashboards extends StatelessWidget {
                       SizedBox(
                         height: r.padding(16),
                       ),
-                      TextComponent(
+                      SelectableTextComponent(
                         "Banking's inherent risk demands proactive CROs.\n\nLeverage big data and analytics to align with Basel standards and internal policies. Our comprehensive solution includes hundreds of KPIs for risk assessment and revenue growth. Analyze borrower data, default trends, and collateral values for informed decision-making.",
                         style: TextStyle(
                           fontSize: r.fontSize(FontSize.s16),
@@ -353,7 +326,7 @@ class TheDashboards extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                TextComponent(
+                                SelectableTextComponent(
                                   'Corporate Banking Analytics',
                                   style: TextStyle(
                                     fontSize: r.fontSize(FontSize.s32),
@@ -364,7 +337,7 @@ class TheDashboards extends StatelessWidget {
                                 SizedBox(
                                   height: r.padding(16),
                                 ),
-                                TextComponent(
+                                SelectableTextComponent(
                                   "Efficiently manage corporate credit portfolios with our solution:\n\nTrack Growth and Yields\nAnalyze Non-Funded Income\nMonitor Deposit Movements and Sectors\nOptimize RM Sales Activities\nAnalyze Funded and Unfunded Portfolios\nAssess Limits, Utilization, and NPLs\nEmpower corporate banking for optimized business\nmanagement.",
                                   style: TextStyle(
                                     fontSize: r.fontSize(FontSize.s16),
@@ -399,6 +372,20 @@ class TheDashboards extends StatelessWidget {
           height: r.padding(120),
         ),
       ],
+    );
+  }
+
+  SizedBox _textWidget(ResponsiveManager r, String text) {
+    return SizedBox(
+      width: r.padding(500),
+      child: SelectableTextComponent(
+        text,
+        style: TextStyle(
+          height: 2.0,
+          fontSize: r.fontSize(FontSize.s16),
+          color: Colors.black,
+        ),
+      ),
     );
   }
 }

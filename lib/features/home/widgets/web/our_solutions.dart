@@ -83,7 +83,7 @@ class OurSolutions extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TextComponent(
+              SelectableTextComponent(
                 'Our',
                 style: TextStyle(
                   fontSize: r.fontSize(FontSize.s130),
@@ -100,7 +100,7 @@ class OurSolutions extends StatelessWidget {
                       name: 'mockup_6',
                     ),
                   ),
-                  TextComponent(
+                  SelectableTextComponent(
                     'Solutions',
                     style: TextStyle(
                       fontSize: r.fontSize(FontSize.s130),
@@ -112,7 +112,7 @@ class OurSolutions extends StatelessWidget {
               ),
               SizedBox(
                 width: r.padding(775),
-                child: TextComponent(
+                child: SelectableTextComponent(
                   "At BEYE Group, we understand the transformative potential of analytics in the banking industry. Our solutions have consistently delivered tangible benefits to financial institutions, enabling them to thrive in today's competitive landscape. Here are some real statistics that highlight the impact of analytics on our clients' success:",
                   style: TextStyle(
                     fontSize: r.fontSize(FontSize.s24),
@@ -186,7 +186,7 @@ class OurSolutions extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              TextComponent(
+              SelectableTextComponent(
                 title,
                 style: TextStyle(
                   color: color,
@@ -198,7 +198,7 @@ class OurSolutions extends StatelessWidget {
               ),
               SizedBox(
                 width: r.padding(360),
-                child: TextComponent(
+                child: SelectableTextComponent(
                   description,
                   style: TextStyle(
                     color: t.textGrey(),

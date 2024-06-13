@@ -23,7 +23,7 @@ class WhyBeye extends StatelessWidget {
             children: [
               Positioned(
                 top: r.padding(AppSize.hs05),
-                child: TextComponent(
+                child: SelectableTextComponent(
                   'Why Beye?',
                   style: TextStyle(
                     color: t.primary(),
@@ -35,7 +35,7 @@ class WhyBeye extends StatelessWidget {
               ),
               Positioned(
                 top: r.padding(AppSize.hs65),
-                child: TextComponent(
+                child: SelectableTextComponent(
                   'Solutions',
                   style: TextStyle(
                     color: t.primarySoftLight(),
@@ -51,7 +51,7 @@ class WhyBeye extends StatelessWidget {
         ),
         SizedBox(
           width: r.padding(1400),
-          child: TextComponent(
+          child: SelectableTextComponent(
             "Beye is the only comprehensive solution for banks in the business intelligence market, our solution is designed by professional bankers with over 20 years of experience .Beye stands out of other solutions in that it addresses in detail all the Key Performance Indicators that are required to manage a banking Institution and all its departments.",
             style: TextStyle(
               fontSize: r.fontSize(FontSize.s24),

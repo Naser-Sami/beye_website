@@ -35,7 +35,7 @@ class HomeViewOurClientele extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            TextComponent(
+            SelectableTextComponent(
               'Our Clientele',
               textAlign: TextAlign.center,
               style: TextStyle(

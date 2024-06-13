@@ -104,7 +104,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                         children: [
                           Positioned(
                             top: r.padding(AppSize.hs05),
-                            child: Text(
+                            child: SelectableTextComponent(
                               'Banking Data Analytics',
                               style: TextStyle(
                                 color: t.white,
@@ -116,7 +116,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                           ),
                           Positioned(
                             top: r.padding(AppSize.hs65),
-                            child: Text(
+                            child: SelectableTextComponent(
                               'Solutions',
                               style: TextStyle(
                                 color: t.primarySoftLight(),
@@ -133,7 +133,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                     Padding(
                       padding: EdgeInsets.symmetric(
                           horizontal: mq(context).width * 0.25),
-                      child: Text(
+                      child: SelectableTextComponent(
                         'Transforming Banking Through Insightful Data: Unlock the Power of Our Analytics Solutions with Intuitive Dashboards on Every Device.',
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -158,7 +158,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                             color: t.fall(),
                             isWithBorder: false,
                             child: Center(
-                              child: Text(
+                              child: TextComponent(
                                 'Demo',
                                 style: TextStyle(
                                     color: t.white,

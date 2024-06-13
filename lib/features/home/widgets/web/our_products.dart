@@ -61,7 +61,7 @@ class HomeViewOurProducts extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                SelectableTextComponent(
                   'Our',
                   style: TextStyle(
                     fontSize: r.fontSize(FontSize.s80),
@@ -69,7 +69,7 @@ class HomeViewOurProducts extends StatelessWidget {
                     fontWeight: FontWeight.normal,
                   ),
                 ),
-                Text(
+                SelectableTextComponent(
                   'Products',
                   style: TextStyle(
                     fontSize: r.fontSize(FontSize.s130),
@@ -100,7 +100,7 @@ class HomeViewOurProducts extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
+                              SelectableTextComponent(
                                 'Explore Our Banking',
                                 style: TextStyle(
                                   fontSize: r.fontSize(FontSize.s24),
@@ -108,7 +108,7 @@ class HomeViewOurProducts extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                 ),
                               ),
-                              Text(
+                              SelectableTextComponent(
                                 'Solutions',
                                 style: TextStyle(
                                   fontSize: r.fontSize(FontSize.s80),
@@ -117,7 +117,7 @@ class HomeViewOurProducts extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(height: r.padding(AppSize.hs16)),
-                              Text(
+                              SelectableTextComponent(
                                 'Unlock efficiency and success with our suite of solutions',
                                 style: TextStyle(
                                   fontSize: r.fontSize(FontSize.s22),
@@ -153,45 +153,33 @@ class HomeViewOurProducts extends StatelessWidget {
                           width: r.width(526),
                           height: r.padding(AppSize.hs230),
                           color: Colors.black.withOpacity(0.75),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: r.padding(40),
+                          ),
                           isWithBorder: false,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Container(
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: r.padding(10),
-                                  ),
-                                  child: SvgIconWidget(
-                                      name: data[i]['icon'] ?? "")),
+                              SvgIconWidget(name: data[i]['icon'] ?? ""),
                               SizedBox(
                                 height: r.padding(8),
                               ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: r.padding(40),
-                                ),
-                                child: TextComponent(
-                                  data[i]['title'] ?? "",
-                                  style: TextStyle(
-                                    fontSize: r.fontSize(FontSize.s24),
-                                    color: t.white,
-                                  ),
+                              SelectableTextComponent(
+                                data[i]['title'] ?? "",
+                                style: TextStyle(
+                                  fontSize: r.fontSize(FontSize.s24),
+                                  color: t.white,
                                 ),
                               ),
                               SizedBox(
                                 height: r.padding(8),
                               ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: r.padding(40),
-                                ),
-                                child: TextComponent(
-                                  data[i]['description'] ?? "",
-                                  style: TextStyle(
-                                    fontSize: r.fontSize(FontSize.s16),
-                                    color: t.white,
-                                  ),
+                              SelectableTextComponent(
+                                data[i]['description'] ?? "",
+                                style: TextStyle(
+                                  fontSize: r.fontSize(FontSize.s16),
+                                  color: t.white,
                                 ),
                               ),
                             ],
