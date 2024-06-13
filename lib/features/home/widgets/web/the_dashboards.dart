@@ -316,7 +316,8 @@ class TheDashboards extends StatelessWidget {
                         image: AssetImage('assets/images/back-ground-5.png'),
                         fit: BoxFit.cover,
                       ),
-                      padding: EdgeInsets.all(r.padding(56)).copyWith(right: 0),
+                      padding: EdgeInsets.all(r.padding(56))
+                          .copyWith(right: 0, bottom: 0),
                       margin: EdgeInsets.only(right: r.margin(140)),
                       child: Stack(
                         children: [
@@ -337,11 +338,13 @@ class TheDashboards extends StatelessWidget {
                                 SizedBox(
                                   height: r.padding(16),
                                 ),
-                                SelectableTextComponent(
-                                  "Efficiently manage corporate credit portfolios with our solution:\n\nTrack Growth and Yields\nAnalyze Non-Funded Income\nMonitor Deposit Movements and Sectors\nOptimize RM Sales Activities\nAnalyze Funded and Unfunded Portfolios\nAssess Limits, Utilization, and NPLs\nEmpower corporate banking for optimized business\nmanagement.",
-                                  style: TextStyle(
-                                    fontSize: r.fontSize(FontSize.s16),
-                                    color: t.white,
+                                Flexible(
+                                  child: SelectableTextComponent(
+                                    "Efficiently manage corporate credit portfolios with our solution:\n\nTrack Growth and Yields\nAnalyze Non-Funded Income\nMonitor Deposit Movements and Sectors\nOptimize RM Sales Activities\nAnalyze Funded and Unfunded Portfolios\nAssess Limits, Utilization, and NPLs\nEmpower corporate banking for optimized business management.",
+                                    style: TextStyle(
+                                      fontSize: r.fontSize(FontSize.s16),
+                                      color: t.white,
+                                    ),
                                   ),
                                 ),
                               ],

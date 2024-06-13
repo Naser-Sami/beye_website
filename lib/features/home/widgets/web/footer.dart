@@ -164,7 +164,7 @@ class Footer extends StatelessWidget {
                           onPressed: () {
                             p.scrollToTop();
                           },
-                          child: SelectableTextComponent(
+                          child: TextComponent(
                             "Home Page",
                             style: TextStyle(
                               fontSize: r.fontSize(16),
@@ -174,7 +174,7 @@ class Footer extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: SelectableTextComponent(
+                          child: TextComponent(
                             "Our Services",
                             style: TextStyle(
                               fontSize: r.fontSize(16),
@@ -184,7 +184,7 @@ class Footer extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {},
-                          child: SelectableTextComponent(
+                          child: TextComponent(
                             "The Dashboards",
                             style: TextStyle(
                               fontSize: r.fontSize(16),
@@ -197,7 +197,7 @@ class Footer extends StatelessWidget {
                             p.scrollToSection(
                                 p.navigatorKeys[6].currentContext!);
                           },
-                          child: SelectableTextComponent(
+                          child: TextComponent(
                             "About Us",
                             style: TextStyle(
                               fontSize: r.fontSize(16),
@@ -210,7 +210,7 @@ class Footer extends StatelessWidget {
                             p.scrollToSection(
                                 p.navigatorKeys[7].currentContext!);
                           },
-                          child: SelectableTextComponent(
+                          child: TextComponent(
                             "Contact Us",
                             style: TextStyle(
                               fontSize: r.fontSize(16),
