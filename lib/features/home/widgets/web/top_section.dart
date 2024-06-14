@@ -24,7 +24,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: Constants.animationDelay1500),
+      duration: const Duration(milliseconds: Constants.animationDelay2000),
     );
 
     animatedFromDownToTop();

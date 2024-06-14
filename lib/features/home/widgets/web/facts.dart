@@ -7,8 +7,8 @@ import 'package:provider/provider.dart';
 import '/config/config.dart';
 import '/core/core.dart';
 
-class HomeViewAchievements extends StatelessWidget {
-  const HomeViewAchievements({super.key});
+class Facts extends StatelessWidget {
+  const Facts({super.key});
 
   @override
   Widget build(BuildContext context) {

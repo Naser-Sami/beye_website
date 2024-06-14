@@ -38,16 +38,19 @@ class OurSolutions extends StatelessWidget {
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      SizedBox(
-                        width: r.padding(490),
-                        height: r.padding(460),
-                        child: const SvgIconWidget(
-                          name: 'circle',
+                      Positioned(
+                        right: r.padding(615),
+                        child: SizedBox(
+                          width: r.padding(490),
+                          height: r.padding(460),
+                          child: const SvgIconWidget(
+                            name: 'circle',
+                          ),
                         ),
                       ),
                       circleWithText(
                         context,
-                        top: r.padding(30),
+                        top: r.padding(25),
                         right: r.padding(170),
                         title: "Revenue Growth",
                         description:
@@ -57,7 +60,7 @@ class OurSolutions extends StatelessWidget {
                       circleWithText(
                         context,
                         top: r.padding(250),
-                        right: r.padding(85),
+                        right: r.padding(95),
                         title: "Risk Mitigation",
                         description:
                             "Analytics plays a crucial role in risk management. Our clients have seen a 30% reduction in non-performing loans thanks to our predictive risk models, resulting in stronger fi",

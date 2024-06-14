@@ -57,7 +57,7 @@ class _WebHomeViewBodyState extends State<WebHomeViewBody> {
                 ),
               ),
               const HomeViewAboutUs(),
-              const HomeViewAchievements(),
+              const Facts(),
               const HomeViewOurClientele(),
               const HomeViewOurProducts(),
               const OurSolutions(),
