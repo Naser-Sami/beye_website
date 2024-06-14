@@ -7,14 +7,14 @@ import '/core/core.dart';
 
 class ResponsiveManager extends ChangeNotifier {
   double height(double value) {
-    return value.h;
+    return value.r;
   }
 
   double width(double value) {
-    return value.w;
+    return value.r;
   }
 
-  double padding(double value) {
+  double response(double value) {
     return value.r;
   }
 

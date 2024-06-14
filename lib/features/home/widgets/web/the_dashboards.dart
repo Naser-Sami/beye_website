@@ -19,7 +19,7 @@ class TheDashboards extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: r.padding(140)),
+          padding: EdgeInsets.symmetric(horizontal: r.response(140)),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
@@ -40,25 +40,25 @@ class TheDashboards extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: r.padding(AppSize.hs40),
+                height: r.response(AppSize.hs40),
               ),
 
               // back-ground-4
               BaseContainerComponent(
                 width: mq(context).width,
-                height: r.padding(615),
+                height: r.response(615),
                 image: const DecorationImage(
                   image: AssetImage('assets/images/back-ground-4.png'),
                   fit: BoxFit.cover,
                 ),
                 padding: EdgeInsets.symmetric(
-                    horizontal: r.padding(40), vertical: r.padding(16)),
+                    horizontal: r.response(40), vertical: r.response(16)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(
-                      width: r.padding(360),
+                      width: r.response(360),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,7 +72,7 @@ class TheDashboards extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: r.padding(16),
+                            height: r.response(16),
                           ),
                           SelectableTextComponent(
                             'Leverage eal-time monitoring, graphical insights, and simplified financial data for percise strategy execution.',
@@ -82,7 +82,7 @@ class TheDashboards extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: r.padding(8),
+                            height: r.response(8),
                           ),
                           SelectableTextComponent(
                             'Maintain optimal balance betwen Assets and Liabilities, enhancing shareholder value. Take immediate corrective actions seamlessly with our management functions.',
@@ -104,7 +104,7 @@ class TheDashboards extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: r.padding(32),
+                height: r.response(32),
               ),
               // back-ground-7 + back-ground-3
               Row(
@@ -112,13 +112,13 @@ class TheDashboards extends StatelessWidget {
                   Expanded(
                     flex: 60,
                     child: SizedBox(
-                      height: r.padding(813),
+                      height: r.response(813),
                       child: Stack(
                         children: [
                           BaseContainerComponent(
-                            height: r.padding(781),
+                            height: r.response(781),
                             padding: EdgeInsets.all(
-                              r.padding(40),
+                              r.response(40),
                             ),
                             image: const DecorationImage(
                               image:
@@ -138,7 +138,7 @@ class TheDashboards extends StatelessWidget {
                                   ),
                                 ),
                                 SizedBox(
-                                  height: r.padding(16),
+                                  height: r.response(16),
                                 ),
                                 SelectableTextComponent(
                                   'Empower CFOs beyond reporting. Drive startegy with real-time insights. Optimize balance, enhance shareholder value, and act swiftly with seamless management functions.',
@@ -165,19 +165,19 @@ class TheDashboards extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: r.padding(32),
+                    width: r.response(32),
                   ),
                   Expanded(
                     flex: 40,
                     child: SizedBox(
-                      height: r.padding(813),
+                      height: r.response(813),
                       child: Stack(
                         children: [
                           BaseContainerComponent(
                             padding: EdgeInsets.only(
-                              top: r.padding(40),
+                              top: r.response(40),
                             ),
-                            height: r.padding(781),
+                            height: r.response(781),
                             image: const DecorationImage(
                               image:
                                   AssetImage('assets/images/back-ground-3.png'),
@@ -188,7 +188,7 @@ class TheDashboards extends StatelessWidget {
                               children: [
                                 Container(
                                   padding: EdgeInsets.symmetric(
-                                    horizontal: r.padding(40),
+                                    horizontal: r.response(40),
                                   ),
                                   width: mq(context).width,
                                   child: Column(
@@ -205,7 +205,7 @@ class TheDashboards extends StatelessWidget {
                                         ),
                                       ),
                                       SizedBox(
-                                        height: r.padding(16),
+                                        height: r.response(16),
                                       ),
                                       _textWidget(r,
                                           'Unlock retail success with our toolkit:'),
@@ -239,9 +239,9 @@ class TheDashboards extends StatelessWidget {
                                   ),
                                 ),
                                 Positioned(
-                                  bottom: r.padding(-33),
+                                  bottom: r.response(-33),
                                   child: SizedBox(
-                                    height: r.padding(AppSize.hs300),
+                                    height: r.response(AppSize.hs300),
                                     child: const PngImageWidget(
                                       name: 'mockup_4',
                                       fit: BoxFit.fill,
@@ -263,17 +263,17 @@ class TheDashboards extends StatelessWidget {
 
         // back-ground-2 + back-ground-5
         Padding(
-          padding: EdgeInsets.only(left: r.padding(140)),
+          padding: EdgeInsets.only(left: r.response(140)),
           child: Row(
             children: [
               Expanded(
                 child: BaseContainerComponent(
-                  height: r.padding(502),
+                  height: r.response(502),
                   image: const DecorationImage(
                     image: AssetImage('assets/images/back-ground-2.png'),
                     fit: BoxFit.cover,
                   ),
-                  padding: EdgeInsets.all(r.padding(56)),
+                  padding: EdgeInsets.all(r.response(56)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -287,7 +287,7 @@ class TheDashboards extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: r.padding(16),
+                        height: r.response(16),
                       ),
                       SelectableTextComponent(
                         "Banking's inherent risk demands proactive CROs.\n\nLeverage big data and analytics to align with Basel standards and internal policies. Our comprehensive solution includes hundreds of KPIs for risk assessment and revenue growth. Analyze borrower data, default trends, and collateral values for informed decision-making.",
@@ -303,7 +303,7 @@ class TheDashboards extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: r.padding(32),
+                width: r.response(32),
               ),
               Expanded(
                 child: Stack(
@@ -311,18 +311,18 @@ class TheDashboards extends StatelessWidget {
                     BaseContainerComponent(
                       color: Colors.amber,
                       width: mq(context).width,
-                      height: r.padding(502),
+                      height: r.response(502),
                       image: const DecorationImage(
                         image: AssetImage('assets/images/back-ground-5.png'),
                         fit: BoxFit.cover,
                       ),
-                      padding: EdgeInsets.all(r.padding(56))
+                      padding: EdgeInsets.all(r.response(56))
                           .copyWith(right: 0, bottom: 0),
                       margin: EdgeInsets.only(right: r.margin(140)),
                       child: Stack(
                         children: [
                           SizedBox(
-                            width: r.padding(400),
+                            width: r.response(400),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -336,7 +336,7 @@ class TheDashboards extends StatelessWidget {
                                   ),
                                 ),
                                 SizedBox(
-                                  height: r.padding(16),
+                                  height: r.response(16),
                                 ),
                                 Flexible(
                                   child: SelectableTextComponent(
@@ -354,11 +354,11 @@ class TheDashboards extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      bottom: r.padding(20),
-                      right: r.padding(40),
+                      bottom: r.response(20),
+                      right: r.response(40),
                       child: SizedBox(
-                        height: r.padding(387),
-                        width: r.padding(491),
+                        height: r.response(387),
+                        width: r.response(491),
                         child: const PngImageWidget(
                           name: 'mockup_3',
                           fit: BoxFit.fill,
@@ -372,7 +372,7 @@ class TheDashboards extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: r.padding(120),
+          height: r.response(120),
         ),
       ],
     );
@@ -380,7 +380,7 @@ class TheDashboards extends StatelessWidget {
 
   SizedBox _textWidget(ResponsiveManager r, String text) {
     return SizedBox(
-      width: r.padding(500),
+      width: r.response(500),
       child: SelectableTextComponent(
         text,
         style: TextStyle(

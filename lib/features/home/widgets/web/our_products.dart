@@ -45,11 +45,11 @@ class HomeViewOurProducts extends StatelessWidget {
       builder: (context, p, _) {
         return SizedBox(
           child: Container(
-            height: r.padding(1623),
+            height: r.response(1623),
             width: mq(context).width,
             padding: EdgeInsets.symmetric(
-              horizontal: r.padding(140),
-              vertical: r.padding(80),
+              horizontal: r.response(140),
+              vertical: r.response(80),
             ),
             decoration: const BoxDecoration(
               image: DecorationImage(
@@ -78,10 +78,10 @@ class HomeViewOurProducts extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: r.padding(AppSize.hs48),
+                  height: r.response(AppSize.hs48),
                 ),
                 Container(
-                  height: r.padding(695),
+                  height: r.response(695),
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage('assets/images/back-ground-6.png'),
@@ -94,7 +94,7 @@ class HomeViewOurProducts extends StatelessWidget {
                         flex: 35,
                         child: Padding(
                           padding: EdgeInsets.symmetric(
-                            horizontal: r.padding(80),
+                            horizontal: r.response(80),
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -116,7 +116,7 @@ class HomeViewOurProducts extends StatelessWidget {
                                   fontWeight: FontWeight.normal,
                                 ),
                               ),
-                              SizedBox(height: r.padding(AppSize.hs16)),
+                              SizedBox(height: r.response(AppSize.hs16)),
                               SelectableTextComponent(
                                 'Unlock efficiency and success with our suite of solutions',
                                 style: TextStyle(
@@ -132,7 +132,7 @@ class HomeViewOurProducts extends StatelessWidget {
                       Expanded(
                         flex: 65,
                         child: SizedBox(
-                          height: r.padding(695),
+                          height: r.response(695),
                           child: const PngImageWidget(
                             fit: BoxFit.fill,
                             name: 'mockup_5',
@@ -142,7 +142,7 @@ class HomeViewOurProducts extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: r.padding(AppSize.hs48)),
+                SizedBox(height: r.response(AppSize.hs48)),
                 SingleChildScrollView(
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
@@ -151,10 +151,10 @@ class HomeViewOurProducts extends StatelessWidget {
                       for (int i = 0; i < 4; i++) ...[
                         BaseContainerComponent(
                           width: r.width(526),
-                          height: r.padding(AppSize.hs230),
+                          height: r.response(AppSize.hs230),
                           color: Colors.black.withOpacity(0.75),
                           padding: EdgeInsets.symmetric(
-                            horizontal: r.padding(40),
+                            horizontal: r.response(40),
                           ),
                           isWithBorder: false,
                           child: Column(
@@ -163,7 +163,7 @@ class HomeViewOurProducts extends StatelessWidget {
                             children: [
                               SvgIconWidget(name: data[i]['icon'] ?? ""),
                               SizedBox(
-                                height: r.padding(8),
+                                height: r.response(8),
                               ),
                               SelectableTextComponent(
                                 data[i]['title'] ?? "",
@@ -173,7 +173,7 @@ class HomeViewOurProducts extends StatelessWidget {
                                 ),
                               ),
                               SizedBox(
-                                height: r.padding(8),
+                                height: r.response(8),
                               ),
                               SelectableTextComponent(
                                 data[i]['description'] ?? "",
@@ -185,14 +185,14 @@ class HomeViewOurProducts extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(width: r.padding(AppSize.hs32)),
+                        SizedBox(width: r.response(AppSize.hs32)),
                       ],
                     ],
                   ),
                 ),
                 const Spacer(),
                 SizedBox(
-                  height: r.padding(AppSize.hs64),
+                  height: r.response(AppSize.hs64),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -203,7 +203,7 @@ class HomeViewOurProducts extends StatelessWidget {
                         text: 'See All Products ',
                         trailing: SvgIconWidget(
                           name: 'arrow',
-                          width: r.padding(24),
+                          width: r.response(24),
                         ),
                       ),
                     ],

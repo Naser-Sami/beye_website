@@ -75,10 +75,13 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
     return Consumer<HomeManager>(
       builder: (context, p, _) {
         return Stack(
+          alignment: Alignment.bottomCenter,
           children: [
             SlideTransition(
               position: _animation1,
               child: Container(
+                alignment: Alignment.bottomCenter,
+                height: r.response(AppSize.fullHeight),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     alignment: Alignment.bottomCenter,
@@ -96,14 +99,14 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SizedBox(height: r.padding(AppSize.hs136)),
+                    SizedBox(height: r.response(AppSize.hs136)),
                     SizedBox(
-                      height: r.width(AppSize.ws200),
+                      height: r.width(AppSize.ws220),
                       child: Stack(
                         alignment: Alignment.topCenter,
                         children: [
                           Positioned(
-                            top: r.padding(AppSize.hs05),
+                            top: r.response(AppSize.hs05),
                             child: SelectableTextComponent(
                               'Banking Data Analytics',
                               style: TextStyle(
@@ -115,7 +118,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                             ),
                           ),
                           Positioned(
-                            top: r.padding(AppSize.hs65),
+                            top: r.response(AppSize.hs65),
                             child: SelectableTextComponent(
                               'Solutions',
                               style: TextStyle(
@@ -143,7 +146,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                         ),
                       ),
                     ),
-                    const SizedBox(height: 24),
+                    SizedBox(height: r.response(24)),
                     Padding(
                       padding: EdgeInsets.symmetric(
                           horizontal: mq(context).width * 0.25),
@@ -153,7 +156,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                           BaseContainerComponent(
                             onTap: () {},
                             cursor: SystemMouseCursors.click,
-                            height: r.padding(AppSize.hs64),
+                            height: r.response(AppSize.hs64),
                             width: r.width(AppSize.ws130),
                             color: t.fall(),
                             isWithBorder: false,
@@ -166,7 +169,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                               ),
                             ),
                           ),
-                          const SizedBox(width: 16),
+                          SizedBox(width: r.response(16)),
                           ButtonWithHoverEffectComponent(
                             onEnter: (event) => p.onHover(true),
                             onExit: (event) => p.onHover(false),
@@ -175,7 +178,7 @@ class _HomeViewTopSectionState extends State<HomeViewTopSection>
                             leading: Icon(
                               Icons.play_arrow,
                               color: t.white,
-                              size: r.padding(28),
+                              size: r.response(28),
                             ),
                           ),
                         ],

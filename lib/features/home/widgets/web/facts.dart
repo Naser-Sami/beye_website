@@ -27,7 +27,7 @@ class Facts extends StatelessWidget {
       width: mq(context).width,
       color: t.greyBackground(),
       padding: EdgeInsets.symmetric(
-        horizontal: r.padding(AppPadding.p140),
+        horizontal: r.response(AppPadding.p140),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,11 +37,11 @@ class Facts extends StatelessWidget {
             Row(
               children: [
                 SizedBox(
-                  width: r.padding(56),
-                  height: r.padding(56),
+                  width: r.response(56),
+                  height: r.response(56),
                   child: Lottie.asset('assets/animations/rocket.json'),
                 ),
-                SizedBox(width: r.padding(24)),
+                SizedBox(width: r.response(24)),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,

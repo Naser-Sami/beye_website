@@ -31,7 +31,7 @@ class HomeViewOurClientele extends StatelessWidget {
           height: r.height(830),
           width: mq(context).width,
           padding: EdgeInsets.symmetric(
-              horizontal: r.padding(260), vertical: r.padding(120)),
+              horizontal: r.response(260), vertical: r.response(120)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -84,7 +84,7 @@ class HomeViewOurClientele extends StatelessWidget {
                                           : p.greyStyle,
                                       child: PngImageWidget(
                                         name: ourClientele[i],
-                                        height: r.padding(AppSize.hs118),
+                                        height: r.response(AppSize.hs118),
                                         color: p.isLogoHover[i]
                                             ? null
                                             : t.textGrey(),
@@ -138,7 +138,7 @@ class HomeViewOurClientele extends StatelessWidget {
                                           : p.greyStyle,
                                       child: PngImageWidget(
                                         name: ourClientele[i],
-                                        height: r.padding(AppSize.hs118),
+                                        height: r.response(AppSize.hs118),
                                       ),
                                     ),
                                   ),

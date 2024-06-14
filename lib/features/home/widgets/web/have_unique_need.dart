@@ -18,12 +18,12 @@ class HaveUniqueNeeds extends StatelessWidget {
       builder: (context, p, _) {
         return BaseContainerComponent(
           key: p.navigatorKeys[7],
-          height: r.padding(337),
+          height: r.response(337),
           width: mq(context).width,
           margin: EdgeInsets.only(
-            bottom: r.padding(120),
-            right: r.padding(140),
-            left: r.padding(140),
+            bottom: r.response(120),
+            right: r.response(140),
+            left: r.response(140),
           ),
           isWithBorder: false,
           image: const DecorationImage(
@@ -31,9 +31,9 @@ class HaveUniqueNeeds extends StatelessWidget {
             fit: BoxFit.fitWidth,
           ),
           child: Container(
-            height: r.padding(337),
+            height: r.response(337),
             width: mq(context).width,
-            padding: EdgeInsets.all(r.padding(64)),
+            padding: EdgeInsets.all(r.response(64)),
             decoration: BoxDecoration(
                 color: Colors.black.withOpacity(0.25),
                 borderRadius: BorderRadius.circular(AppRadius.r16)),
@@ -69,7 +69,7 @@ class HaveUniqueNeeds extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: r.padding(300),
+                  width: r.response(300),
                 ),
                 ButtonWithHoverEffectComponent(
                   isHover: p.isContactUsHover,
@@ -78,7 +78,7 @@ class HaveUniqueNeeds extends StatelessWidget {
                   onExit: (event) => p.onContactUsHover(false),
                   trailing: SvgIconWidget(
                     name: 'arrow',
-                    width: r.padding(24),
+                    width: r.response(24),
                   ),
                 ),
               ],

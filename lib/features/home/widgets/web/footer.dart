@@ -24,20 +24,23 @@ class Footer extends StatelessWidget {
     return Consumer<HomeManager>(
       builder: (context, p, _) {
         return Container(
-          height: r.height(460),
+          height: r.response(465),
           width: mq(context).width,
           color: Colors.black,
-          padding: EdgeInsets.only(top: r.padding(56)),
+          padding: EdgeInsets.only(top: r.response(56)),
           child: Column(
             children: [
-              const Expanded(
-                child: Row(
-                  children: [
-                    _FirstPart(key: Key(_FIRST_PART)),
-                    _SecondPart(key: Key(_SECOND_PART)),
-                    _ThirdPart(key: Key(_THIRD_PART)),
-                    _FourthPart(key: Key(_FOURTH_PART)),
-                  ],
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.symmetric(horizontal: r.margin(140)),
+                  child: const Row(
+                    children: [
+                      _FirstPart(key: Key(_FIRST_PART)),
+                      _SecondPart(key: Key(_SECOND_PART)),
+                      _ThirdPart(key: Key(_THIRD_PART)),
+                      _FourthPart(key: Key(_FOURTH_PART)),
+                    ],
+                  ),
                 ),
               ),
               Container(
@@ -47,7 +50,7 @@ class Footer extends StatelessWidget {
                 color: t.white,
               ),
               SizedBox(
-                height: r.padding(100),
+                height: r.response(100),
                 child: Center(
                   child: SelectableTextComponent(
                     '2024 beyegroup',
@@ -75,21 +78,23 @@ class _FirstPart extends StatelessWidget {
     final t = Provider.of<ThemeManager>(context);
 
     return Expanded(
+      flex: 2,
       key: const Key(_FIRST_PART),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: r.padding(AppSize.ws219),
+            width: r.response(AppSize.ws219),
             child: SvgIconWidget(
               name: AppStrings.mainLogo,
               width: r.width(AppSize.ws210),
             ),
           ),
           SizedBox(
-            height: r.padding(97),
+            height: r.response(97),
           ),
           SizedBox(
-            width: r.padding(AppSize.ws230),
+            width: r.response(AppSize.ws230),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -101,7 +106,7 @@ class _FirstPart extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: r.padding(16),
+            height: r.response(16),
           ),
           SelectableTextComponent(
             '@beyegroup',
@@ -122,7 +127,7 @@ class _FirstPart extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: SizedBox(
-        width: r.padding(24),
+        width: r.response(24),
         child: SvgIconWidget(
           name: icon,
         ),
@@ -137,6 +142,7 @@ class _SecondPart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
+      flex: 2,
       key: const Key(_SECOND_PART),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,9 +169,9 @@ class _SecondPart extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SvgIconWidget(name: icon, color: t.white),
-            SizedBox(width: r.padding(16)),
+            SizedBox(width: r.response(16)),
             SizedBox(
-              width: r.padding(280),
+              width: r.response(280),
               child: SelectableTextComponent(
                 title,
                 style: TextStyle(
@@ -176,7 +182,7 @@ class _SecondPart extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: r.padding(24)),
+        SizedBox(height: r.response(24)),
       ],
     );
   }
@@ -196,17 +202,17 @@ class _ThirdPart extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               _footerMainTitle(context, AppStrings.links),
-              _textButton(context, () => p.scrollToTop(), "Home Page"),
-              _textButton(context, () {}, "Our Services"),
-              _textButton(context, () {}, "The Dashboards"),
+              _textButton(context, () => p.scrollToTop(), AppStrings.homePage),
+              _textButton(context, () {}, AppStrings.ourServices),
+              _textButton(context, () {}, AppStrings.theDashboards),
               _textButton(
                   context,
                   () => p.scrollToSection(p.navigatorKeys[6].currentContext!),
-                  "About Us"),
+                  AppStrings.aboutUs),
               _textButton(
                   context,
                   () => p.scrollToSection(p.navigatorKeys[7].currentContext!),
-                  "Contact Us"),
+                  AppStrings.contactUs),
             ],
           ),
         );
@@ -247,26 +253,27 @@ class _FourthPart extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           _footerMainTitle(context, AppStrings.startYourDemo),
-          SizedBox(
-            width: r.padding(300),
-            child: TextField(
-              style: TextStyle(color: t.white),
-              decoration: InputDecoration(
-                fillColor: Colors.transparent,
-                filled: false,
-                hintText: 'Email Address',
-                hintStyle: TextStyle(
-                  fontSize: r.fontSize(FontSize.s16),
-                  color: t.white,
-                ),
-                border: UnderlineInputBorder(
-                  borderSide: BorderSide(color: t.white),
-                ),
-                enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: t.white),
-                ),
-                focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: t.white, width: 2.0),
+          Expanded(
+            child: SizedBox(
+              child: TextField(
+                style: TextStyle(color: t.white),
+                decoration: InputDecoration(
+                  fillColor: Colors.transparent,
+                  filled: false,
+                  hintText: AppStrings.emailAddress,
+                  hintStyle: TextStyle(
+                    fontSize: r.fontSize(FontSize.s16),
+                    color: t.white,
+                  ),
+                  border: UnderlineInputBorder(
+                    borderSide: BorderSide(color: t.white),
+                  ),
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: t.white),
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: t.white, width: 2.0),
+                  ),
                 ),
               ),
             ),
@@ -289,7 +296,7 @@ Widget _footerMainTitle(BuildContext context, String title) {
           color: t.white,
         ),
       ),
-      SizedBox(height: r.padding(32)),
+      SizedBox(height: r.response(32)),
     ],
   );
 }

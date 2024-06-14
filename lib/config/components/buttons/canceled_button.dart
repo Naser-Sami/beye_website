@@ -20,11 +20,10 @@ class CanceledButtonComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     final responsive = Provider.of<ResponsiveManager>(context);
     return Padding(
-      padding: EdgeInsets.all(responsive.padding(AppPadding.p16)),
+      padding: EdgeInsets.all(responsive.response(AppPadding.p16)),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor:
-              Provider.of<ThemeManager>(context).error(),
+          backgroundColor: Provider.of<ThemeManager>(context).error(),
           shadowColor: Provider.of<ThemeManager>(context).error(),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppRadius.r16),

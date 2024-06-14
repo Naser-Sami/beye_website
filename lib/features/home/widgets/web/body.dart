@@ -40,7 +40,7 @@ class _WebHomeViewBodyState extends State<WebHomeViewBody> {
             children: [
               Container(
                 width: mq(context).width,
-                height: r.padding(AppSize.fullHeight) * 1.35,
+                height: r.response(AppSize.fullHeight * 1.35),
                 decoration: const BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.fill,

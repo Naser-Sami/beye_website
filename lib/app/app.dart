@@ -90,11 +90,11 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
         }
 
         return ScreenUtilInit(
-          designSize: isDesktop(context)
-              ? const Size(1920, 1080)
+          designSize: isHandset(context)
+              ? const Size(375, 812)
               : isTablet(context)
                   ? const Size(1024, 768)
-                  : const Size(375, 812),
+                  : const Size(1920, 1080),
           minTextAdapt: true,
           splitScreenMode: true,
           ensureScreenSize: true,

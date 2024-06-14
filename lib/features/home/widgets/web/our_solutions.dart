@@ -15,20 +15,20 @@ class OurSolutions extends StatelessWidget {
     final t = Provider.of<ThemeManager>(context);
 
     return Container(
-      height: r.padding(624),
+      height: r.response(624),
       width: mq(context).width,
       margin: EdgeInsets.symmetric(
         vertical: r.margin(120),
       ),
       padding: EdgeInsets.symmetric(
-        horizontal: r.padding(140),
+        horizontal: r.response(140),
       ),
       child: Stack(
         alignment: Alignment.center,
         children: [
           SizedBox(
             width: mq(context).width,
-            height: r.padding(600),
+            height: r.response(600),
             child: Stack(
               alignment: Alignment.centerLeft,
               children: [
@@ -39,10 +39,10 @@ class OurSolutions extends StatelessWidget {
                     alignment: Alignment.center,
                     children: [
                       Positioned(
-                        right: r.padding(615),
+                        right: r.response(615),
                         child: SizedBox(
-                          width: r.padding(490),
-                          height: r.padding(460),
+                          width: r.response(490),
+                          height: r.response(460),
                           child: const SvgIconWidget(
                             name: 'circle',
                           ),
@@ -50,8 +50,8 @@ class OurSolutions extends StatelessWidget {
                       ),
                       circleWithText(
                         context,
-                        top: r.padding(25),
-                        right: r.padding(170),
+                        top: r.response(25),
+                        right: r.response(170),
                         title: "Revenue Growth",
                         description:
                             "On average, our clients have experienced a 20% increase in revenue within the first year of implementing our analytics solutions. By identifying untapped opportunities and optimizing their offerings, they've achieved remarkable financial growth.",
@@ -59,8 +59,8 @@ class OurSolutions extends StatelessWidget {
                       ),
                       circleWithText(
                         context,
-                        top: r.padding(250),
-                        right: r.padding(95),
+                        top: r.response(250),
+                        right: r.response(95),
                         title: "Risk Mitigation",
                         description:
                             "Analytics plays a crucial role in risk management. Our clients have seen a 30% reduction in non-performing loans thanks to our predictive risk models, resulting in stronger fi",
@@ -68,8 +68,8 @@ class OurSolutions extends StatelessWidget {
                       ),
                       circleWithText(
                         context,
-                        bottom: r.padding(10),
-                        right: r.padding(170),
+                        bottom: r.response(10),
+                        right: r.response(170),
                         crossAxisAlignment: CrossAxisAlignment.center,
                         title: "Customer Satisfaction",
                         description:
@@ -97,7 +97,7 @@ class OurSolutions extends StatelessWidget {
               Row(
                 children: [
                   SizedBox(
-                    height: r.padding(154),
+                    height: r.response(154),
                     child: const PngImageWidget(
                       fit: BoxFit.fill,
                       name: 'mockup_6',
@@ -114,7 +114,7 @@ class OurSolutions extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                width: r.padding(775),
+                width: r.response(775),
                 child: SelectableTextComponent(
                   "At BEYE Group, we understand the transformative potential of analytics in the banking industry. Our solutions have consistently delivered tangible benefits to financial institutions, enabling them to thrive in today's competitive landscape. Here are some real statistics that highlight the impact of analytics on our clients' success:",
                   style: TextStyle(
@@ -153,17 +153,17 @@ class OurSolutions extends StatelessWidget {
         crossAxisAlignment: crossAxisAlignment,
         children: [
           Container(
-            width: r.padding(100),
-            height: r.padding(100),
-            padding: EdgeInsets.all(r.padding(15)),
+            width: r.response(100),
+            height: r.response(100),
+            padding: EdgeInsets.all(r.response(15)),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: color,
             ),
             child: Container(
-              width: r.padding(80),
-              height: r.padding(80),
-              padding: EdgeInsets.all(r.padding(10)),
+              width: r.response(80),
+              height: r.response(80),
+              padding: EdgeInsets.all(r.response(10)),
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 gradient: LinearGradient(
@@ -183,7 +183,7 @@ class OurSolutions extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: r.padding(AppSize.ws64),
+            width: r.response(AppSize.ws64),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -197,10 +197,10 @@ class OurSolutions extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: r.padding(AppSize.hs08),
+                height: r.response(AppSize.hs08),
               ),
               SizedBox(
-                width: r.padding(360),
+                width: r.response(360),
                 child: SelectableTextComponent(
                   description,
                   style: TextStyle(

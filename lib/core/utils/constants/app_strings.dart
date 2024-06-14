@@ -6,6 +6,13 @@ class AppStrings {
   static const contacts = "Contacts";
   static const links = "Links";
   static const startYourDemo = "Start Your Demo";
+  static const emailAddress = "Email Address";
+  static const homePage = "Home Page";
+  static const ourServices = "Our Services";
+  static const theDashboards = "The Dashboards";
+  static const aboutUs = "About Us";
+  static const contactUs = "Contact Us";
+  static const _ = "";
 
   // company info
   static const address =

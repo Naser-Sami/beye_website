@@ -21,7 +21,7 @@ class HomeViewAboutUs extends StatelessWidget {
           height: r.height(AppSize.hs378),
           width: mq(context).width,
           padding: EdgeInsets.symmetric(
-            horizontal: r.padding(AppPadding.p140),
+            horizontal: r.response(AppPadding.p140),
           ),
           child: Row(
             children: [
@@ -63,7 +63,7 @@ class HomeViewAboutUs extends StatelessWidget {
                         //
                       },
                       cursor: SystemMouseCursors.click,
-                      height: r.padding(AppSize.hs64),
+                      height: r.response(AppSize.hs64),
                       width: r.width(AppSize.ws180),
                       color: t.fall(),
                       isWithBorder: false,

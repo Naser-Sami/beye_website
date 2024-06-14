@@ -38,15 +38,15 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
       onHover: onHover,
       cursor: SystemMouseCursors.click,
       child: SizedBox(
-        height: r.padding(AppSize.hs64),
+        height: r.response(AppSize.hs64),
         width: width ?? r.width(AppSize.ws250),
         child: Stack(
           children: [
             Container(
-              height: r.padding(AppSize.hs64),
+              height: r.response(AppSize.hs64),
               width: width ?? r.width(AppSize.ws250),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(r.padding(AppRadius.r16)),
+                borderRadius: BorderRadius.circular(r.response(AppRadius.r16)),
                 border: Border.all(color: t.secondary(), width: 0.50),
               ),
             ),
@@ -56,12 +56,13 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
                   const Duration(milliseconds: Constants.animationDelay400),
               child: AnimatedContainer(
                 width: isHover ? width ?? r.width(AppSize.ws250) : 0,
-                height: r.padding(AppSize.hs64),
+                height: r.response(AppSize.hs64),
                 duration:
                     const Duration(milliseconds: Constants.animationDelay400),
                 decoration: BoxDecoration(
                   color: t.fall(),
-                  borderRadius: BorderRadius.circular(r.padding(AppRadius.r16)),
+                  borderRadius:
+                      BorderRadius.circular(r.response(AppRadius.r16)),
                 ),
               ),
             ),
@@ -71,7 +72,7 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
                 children: [
                   if (leading != null) ...[
                     leading!,
-                    SizedBox(width: r.padding(16)),
+                    SizedBox(width: r.response(16)),
                   ],
                   Text(
                     text,
@@ -81,7 +82,7 @@ class ButtonWithHoverEffectComponent extends StatelessWidget {
                     ),
                   ),
                   if (trailing != null) ...[
-                    SizedBox(width: r.padding(16)),
+                    SizedBox(width: r.response(16)),
                     trailing!,
                   ],
                 ],
