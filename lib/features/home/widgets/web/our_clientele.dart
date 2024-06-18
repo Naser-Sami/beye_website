@@ -94,8 +94,7 @@ class HomeViewOurClientele extends StatelessWidget {
                                 ),
                               ),
                               if (i != 3)
-                                Container(
-                                  height: r.height(AppSize.hs200),
+                                VerticalDivider(
                                   color: t.borderColor(),
                                   width: 1,
                                 ),
@@ -145,8 +144,7 @@ class HomeViewOurClientele extends StatelessWidget {
                                 ),
                               ),
                               if (i != ourClientele.length - 1)
-                                Container(
-                                  height: r.height(AppSize.hs200),
+                                VerticalDivider(
                                   color: t.borderColor(),
                                   width: 1,
                                 ),

@@ -173,7 +173,9 @@ class HomeManager extends ChangeNotifier {
         title: 'Contact Us',
         isSelected: false,
         onPressed: () {
-          scrollToSection(navigatorKeys[7].currentContext!);
+          // scrollToSection(navigatorKeys[7].currentContext!);
+          context.beamToNamed('/contact-us');
+          print('${context.currentBeamPages.first.title}');
         },
       ),
     ];

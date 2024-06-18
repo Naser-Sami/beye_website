@@ -17,6 +17,12 @@ final routerDelegate = BeamerDelegate(
             title: 'Home',
             child: HomeView(),
           ),
+      '/contact-us': (BuildContext context, BeamState state, Object? data) =>
+          const BeamPage(
+            key: ValueKey('contact-us'),
+            title: 'Contact Us',
+            child: ContactUs(),
+          ),
       '/products': (BuildContext context, BeamState state, Object? data) =>
           const BeamPage(
             key: ValueKey('products'),

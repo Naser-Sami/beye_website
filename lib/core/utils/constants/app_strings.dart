@@ -12,12 +12,17 @@ class AppStrings {
   static const theDashboards = "The Dashboards";
   static const aboutUs = "About Us";
   static const contactUs = "Contact Us";
+  static const letsTalk = "Let's Talk";
+  static const location = "Location";
+  static const email = "E-mail";
+  static const phone = "Phone";
   static const _ = "";
 
   // company info
   static const address =
       "Dabouq – Kheir Al dein al Maani Street Juresat Plaza 1 bulding – Second Floor";
   static const phoneNumber = "00962 6 5337669";
+  static const phoneNumber2 = "00962 6 5330774";
 
   // social media
   static const facebookLink = "";

@@ -9,4 +9,4 @@ export 'our_solutions.dart';
 export 'the_dashboards.dart';
 export 'why_beye.dart';
 export 'have_unique_need.dart';
-export 'footer.dart';
+export '../../../shared/shared.dart';
